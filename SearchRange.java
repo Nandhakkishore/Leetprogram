@@ -2,7 +2,7 @@ class Solution {
     public int[] searchRange(int[] nums, int target) {
         return new int[]{findBound(nums, target, true), findBound(nums, target, false)};
     }
-
+    
     private int findBound(int[] nums, int target, boolean isFirst) {
         int left = 0;
         int right = nums.length - 1;
